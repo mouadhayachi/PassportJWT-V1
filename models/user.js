@@ -14,6 +14,10 @@ const UserSchema = new Schema({
   dataofcreation: {
     type: Date,
     default: Date.now()
+  },
+  tasks:{
+    type:Array,
+    default:[]
   }
 });
 

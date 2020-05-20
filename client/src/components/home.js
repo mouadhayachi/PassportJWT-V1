@@ -8,7 +8,8 @@ function Home() {
     var token = localStorage.getItem("token");
     var decoded = jwt_decode(token);
     setEmail(decoded.email);
-  }, []);
+  }, [email]);
+
 
   return (
     <div>
